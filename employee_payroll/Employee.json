@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1771566345325,
+    "name": "sahil kumar",
+    "email": "sahilkumar@gmail.com",
+    "password": "$2b$10$oXSM0s2mD.tGKN2usKw1O.HN2ga0Q.Eox9.xD.xG2s2EaZFMOQmTy",
+    "department": "technical",
+    "basic_salary": 50000
+  },
+  {
+    "id": 1771566866947,
+    "name": "aditya narayan mishra",
+    "email": "adm123@gmail.com",
+    "password": "$2b$10$b3XXuf/iSR0CmQc.05lZdOGT7LSOcPfD5uWJvUGwR8VsY8Un.qUfy",
+    "department": "management",
+    "basic_salary": 40000
+  }
+]

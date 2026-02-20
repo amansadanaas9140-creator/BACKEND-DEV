@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee payroll</title>
+        <link rel = "stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div class = "nav">
+            <p>Employee Payroll</p>
+        </div>
+        <div class="container">
+            <h1>Employee List</h1>
+            <div class="toolbar">
+                <p>All employee details from records</p>
+                <a class="button" href="/employee/add">Add Employee</a>
+            </div>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Basic Salary</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (!employees || employees.length === 0) { %>
+                            <tr>
+                                <td colspan="6">No employee records found.</td>
+                            </tr>
+                        <% } %>
+                        <% employees.forEach((employee) => { %>
+                            <tr>
+                                <td><%= employee.id %></td>
+                                <td><%= employee.name %></td>
+                                <td><%= employee.email %></td>
+                                <td><%= employee.department %></td>
+                                <td><%= employee.basic_salary %></td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="button" href="/employee/edit/<%= employee.id %>">Edit</a>
+                                        <form class="inline" action="/employee/delete/<%= employee.id %>" method="post">
+                                            <button class="delete" type="submit">Delete</button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
