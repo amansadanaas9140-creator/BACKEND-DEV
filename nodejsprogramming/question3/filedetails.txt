@@ -1,5 +1,0 @@
-Operating System: Windows_NT
-CPU Architecture: x64
-Total Memory: 16873545728 bytes
-Free Memory: 4979855360 bytes
-Home Directory: C:\Users\AMAN SADANA
